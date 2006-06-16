@@ -1,0 +1,102 @@
+perl-App-Info 
+------------------------------------------- 
+App::Info provides a generalized interface for providing metadata about
+software packages installed on a system. The idea is that App::Info
+subclasses can be used in Perl application installers in order to
+determine whether software dependencies have been fulfilled, and to get
+necessary metadata about those software packages.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  perl-5.8.7-5
+
+Build requirements:
+  cygwin-1.5.19-4
+  perl-5.8.7-5
+  perl-Module-Build-0.26-2
+
+Canonical homepage:
+  http://search.cpan.org/~dwheeler/App-Info/
+
+Canonical download:
+  http://www.cpan.org/authors/id/D/DW/DWHEELER/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-App-Info-0.49-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-App-Info-0.49-1.cygport all
+
+This will create:
+  /usr/src/perl-App-Info-0.49-1-src.tar.bz2
+  /usr/src/perl-App-Info-0.49-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/perl5/vendor_perl/5.8/App/Info.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/HTTPD.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/HTTPD/Apache.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Handler.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Handler/Carp.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Handler/Print.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Handler/Prompt.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Lib.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Lib/Expat.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Lib/Iconv.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Lib/OSSPUUID.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/RDBMS.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/RDBMS/PostgreSQL.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/RDBMS/SQLite.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Request.pm
+  /usr/lib/perl5/vendor_perl/5.8/App/Info/Util.pm
+  /usr/share/doc/Cygwin/perl-App-Info-0.49.README
+  /usr/share/doc/perl-App-Info-0.49/Changes
+  /usr/share/doc/perl-App-Info-0.49/README
+  /usr/share/man/man3/App.Info.3pm.gz
+  /usr/share/man/man3/App.Info.HTTPD.3pm.gz
+  /usr/share/man/man3/App.Info.HTTPD.Apache.3pm.gz
+  /usr/share/man/man3/App.Info.Handler.3pm.gz
+  /usr/share/man/man3/App.Info.Handler.Carp.3pm.gz
+  /usr/share/man/man3/App.Info.Handler.Print.3pm.gz
+  /usr/share/man/man3/App.Info.Handler.Prompt.3pm.gz
+  /usr/share/man/man3/App.Info.Lib.3pm.gz
+  /usr/share/man/man3/App.Info.Lib.Expat.3pm.gz
+  /usr/share/man/man3/App.Info.Lib.Iconv.3pm.gz
+  /usr/share/man/man3/App.Info.Lib.OSSPUUID.3pm.gz
+  /usr/share/man/man3/App.Info.RDBMS.3pm.gz
+  /usr/share/man/man3/App.Info.RDBMS.PostgreSQL.3pm.gz
+  /usr/share/man/man3/App.Info.RDBMS.SQLite.3pm.gz
+  /usr/share/man/man3/App.Info.Request.3pm.gz
+  /usr/share/man/man3/App.Info.Util.3pm.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.49-1 -----
+Version bump.
+
+----- version 0.48-1 -----
+Version bump.
+
+----- version 0.47-1 -----
+Version bump, built for perl-5.8.7.
+
+----- version 0.30-2 -----
+Rebuilt for perl-5.8.6.
+
+----- version 0.30-1 -----
+New upstream release; see Changes for details.
+Installed in the perl-5.8.5 vendor hierarchy.
+
+----- version 0.25-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
